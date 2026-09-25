@@ -1,0 +1,27 @@
+import java.util.*;
+
+class largestSmallest{
+   public static void larSmall(){
+    int[] arr={10, 5, 20, 8, 15};
+
+    int largest=arr[0];
+    int smallest=arr[0];
+
+    for(int n:arr){
+      if(n > largest)
+        largest=n;
+
+      if(n < smallest)
+       smallest=n;  
+    }
+
+    System.out.println("Largest Number is :" + largest);
+    System.out.println("Smallest Number is : " + smallest);
+   }
+}
+
+public class Main {
+    public static void main(String[] args) {
+     largestSmallest.larSmall();
+    }
+}
