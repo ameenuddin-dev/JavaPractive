@@ -1,0 +1,25 @@
+import java.util.*;
+import java.util.Scanner;
+
+class reverseString{
+
+  public static String reverse(){
+     String rev="";
+
+     Scanner sc= new Scanner(System.in);
+     System.out.print("Enter the String is: ");
+     String str=sc.next();
+
+     for(int i=str.length()-1; i>=0; i--){
+        rev +=str.charAt(i);
+     }
+
+     return rev;
+  }
+}
+public class Main {
+    public static void main(String[] args) {
+      String result=reverseString.reverse();
+      System.out.println("Reverse String is: " + result);
+    }
+}
