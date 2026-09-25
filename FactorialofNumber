@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Scanner;
+
+
+class factorial{
+ public static void fac(){
+     Scanner sc=new Scanner(System.in);
+     System.out.print("Ente the Number: ");
+     int num=sc.nextInt();
+     int fact=1;
+
+     for(int i=2; i<=num; i++){
+         fact *=i;
+     }
+      System.out.println("Factorial Of " + num + " is : " + fact);
+    }
+}
+
+public class Main1{
+    public static void main (String[] args) {
+        factorial.fac();
+    }
+}
