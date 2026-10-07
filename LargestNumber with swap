@@ -1,0 +1,35 @@
+import java.util.*;
+
+class thirdLargest{
+  String large(){
+    int [] arr={3,9,4,2,99,201};
+
+    int largeNumber=arr[0];
+    int secondLargestNumber=arr[0];
+    int thirtLargestNumber=arr[0];
+    
+    for(int i=0; i<arr.length; i++){
+       
+        if (arr[i] > largeNumber){
+             thirtLargestNumber=secondLargestNumber;
+             secondLargestNumber=largeNumber;
+             largeNumber=arr[i];
+        } else if(arr[i] > secondLargestNumber && arr[i] !=largeNumber){
+            thirtLargestNumber=secondLargestNumber;
+            secondLargestNumber= arr[i];
+        }else if
+          (arr[i] > thirtLargestNumber && arr[i] != secondLargestNumber && arr[i] !=largeNumber){
+            thirtLargestNumber=arr[i];
+          }
+    }
+    return "Second Largest Number is: " + thirtLargestNumber;
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      thirdLargest tl= new thirdLargest();
+      String result= tl.large();
+      System.out.println(result);
+    }
+}
