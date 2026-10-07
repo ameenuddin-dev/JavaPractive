@@ -1,0 +1,20 @@
+import java.util.*;
+
+class largestNumber{
+  void large(){
+    int [] arr={3, 9, 4, 2, 99, 201};
+
+    Arrays.sort(arr);
+    System.out.println("4th largets Number is : " + arr[arr.length-4]);
+        System.out.println("5th largets Number is : " + arr[arr.length-5]);
+
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      largestNumber ln= new largestNumber();
+      ln.large();
+      
+    }
+}
